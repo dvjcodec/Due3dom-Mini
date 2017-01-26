@@ -3,8 +3,8 @@ Tested, fully working shield for Arduino DUE - DUE3DOM MINI
 
 ## Features:
 
-- up to 4 drivers )more on expansion port)
-- up to 4 thermistors (one onboard)
+- up to 4 drivers (more on expansion port)
+- up to 4 thermistors (one on board)
 - up to 3 fans,
 - 12-24V power supply,
 - separate power supply for bed, hotend and rest electronic
