@@ -30,3 +30,6 @@ This electronic created with hudge support from Fabrykator.pl boards comunity.
 
 ### Official website (Polish only at now) --> http://www.due3dom.pl
 ### Official thread on Fabrykator.pl --> http://www.fabrykator.pl/board/viewtopic.php?f=12&t=242
+
+## Videos on YT
+https://www.youtube.com/watch?v=12baxgj3plI
