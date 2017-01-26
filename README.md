@@ -3,18 +3,20 @@ Tested, fully working shield for Arduino DUE - DUE3DOM MINI
 
 # Features:
 
-up to 4 drivers )more on expansion port)
-up to 4 thermistors (one onboard)
-up to 3 fans,
-12-24V power supply,
-separate power supply for bed, hotend and rest electronic
-12V fans (with 24V power supply in)
-3 fuses
+- up to 4 drivers )more on expansion port)
+- up to 4 thermistors (one onboard)
+- up to 3 fans,
+- 12-24V power supply,
+- separate power supply for bed, hotend and rest electronic
+- 12V fans (with 24V power supply in)
+- 3 fuses
+
 EAGLE files, BOM (for large version, but 99% electronic components have same), photos.
 
 # IMPORTANT !!! Need to fix 2 places:
-Add 10uF capacitor between GND and RESET pin
-Add diode to DUE 12V poewr line (just cut and add 1A diode)
+ - Add 10uF capacitor between GND and RESET pin
+ - Add diode to DUE 12V poewr line (just cut and add 1A diode)
+
 EXP1 on DUE3DOM = EXP2 on SmartController
 EXP2 on DUE3DOM = EXP1 on SmartController
 
