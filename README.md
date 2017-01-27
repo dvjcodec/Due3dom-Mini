@@ -1,38 +1,56 @@
-# Due3dom-Mini
-Tested, fully working shield for Arduino DUE - DUE3DOM MINI
+# DUE3DOM MINI
+
+Modular 3D printer driver working as a shield for 32-bit ARM based Arduino DUE.
+
+![Board](due3dom_mini_asembled.jpg?raw=true "Board")
 
 ## Features:
+* 20A channel for bed heating (20A fuse) with own power socket
+* 10A channel for head heating (10A fuse) with own power socket
+* up to 4 external A4988 compatible stepstick drivers (more on expansion port); jumper based step switching
+* high current connectors for all power and driver sockets
+* input for 4 thermistors (1x onboard; 3x external)
+* PWM output for 3 fans
+* 4-pin output for board cooling fan driven with signal based on onboard thermistor
 
-- up to 4 drivers (more on expansion port)
-- up to 4 thermistors (one on board)
-- up to 3 fans,
-- 12-24V power supply,
-- separate power supply for bed, hotend and rest electronic
-- 12V fans (with 24V power supply in)
-- 3 fuses
+## Connections
 
-EAGLE files, BOM (for large version, but 99% electronic components have same), photos.
+### Connecting LCD
+* EXP1 on DUE3DOM to be connected with EXP2 on SmartController
+* EXP2 on DUE3DOM to be connected with EXP1 on SmartController
 
-## IMPORTANT !!! Need to fix 2 places:
- - Add 10uF capacitor between GND and RESET pin
- - Add diode to DUE 12V poewr line (just cut and add 1A diode)
+### Stepstick drivers, motors and other peripherials
+![Connections](due3dom_mini_top_wiring.jpg?raw=true "Connections")
 
-EXP1 on DUE3DOM = EXP2 on SmartController
-EXP2 on DUE3DOM = EXP1 on SmartController
+## Issues
 
-## This is rev. A, but tested with a lot of people.
+First board revision (A) needs two manual fixes:
+* protection diode [#1](/../../issues/1)
+* power on reset capacitor [#2](/../../issues/2)
 
-Supported by Repetier and Marlin DUO:
-https://www.repetier.com/firmware/dev/index.php
-https://github.com/esenapaj/Marlin
+## Firmware
 
-This electronic created with hudge support from Fabrykator.pl boards comunity.
+Supported by official firmware:
+* [Repetier](https://www.repetier.com/firmware/dev/index.php)
+* [Marlin](https://github.com/esenapaj/Marlin)
 
-### Official website (Polish only at now) --> http://www.due3dom.pl
-### Official thread on Fabrykator.pl --> http://www.fabrykator.pl/board/viewtopic.php?f=12&t=242
 
-## Videos on YT
-https://www.youtube.com/watch?v=12baxgj3plI
+## Support
+* [Official Website [PL]](http://www.due3dom.pl/)
+* [Forum thread [PL/EN]](http://www.fabrykator.pl/board/viewtopic.php?f=12&t=242)
 
-## License CC BY-SA 3.0
-https://creativecommons.org/licenses/by-sa/3.0/
+## Where to buy?
+
+* [Seaside Customs](http://fabrykator.pl/seasidecustoms/due3dom-elektronika-32bit-dla-drukarek-3d/)
+* Contact: [@dvjcodec](https://github.com/dvjcodec/)
+
+## Demo
+[![DUE3DOM MINI + LCD 128x64 - Marlin Firmware](due3dom-mini-yt.jpg?raw=true "Demo")](https://www.youtube.com/watch?v=12baxgj3plI "DUE3DOM MINI + LCD 128x64 - Marlin Firmware")
+
+## License
+
+[CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)
+
+## Authors
+
+Krzysztof @ Seaside Customs
