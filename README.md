@@ -33,3 +33,6 @@ This electronic created with hudge support from Fabrykator.pl boards comunity.
 
 ## Videos on YT
 https://www.youtube.com/watch?v=12baxgj3plI
+
+## License CC BY-SA 3.0
+https://creativecommons.org/licenses/by-sa/3.0/
